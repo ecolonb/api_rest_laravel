@@ -22,6 +22,7 @@
 // Route::post('login', 'AuthController@login');
 
 // Route::post('recover', 'AuthController@recover');
+
 Route::post('login', function (Request $request) {
     return response()->json(['ok' => true, 'mssg' => 'Secure ApiREST', 'token' => 'abcd123'], 200);
 });
